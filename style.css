@@ -18,3 +18,16 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: #ff0000;
 }
+
+.title {
+    margin-top: 60rem;
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: rgb(255, 222, 173);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.text-changing span {
+    transition: color 500ms;
+}
