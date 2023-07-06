@@ -20,8 +20,31 @@ body::-webkit-scrollbar-thumb {
     background-color: #ff0000;
 }
 
-.title {
+.mt-1 {
+    margin-top: 10rem;
+}
+
+.mt-2 {
+    margin-top: 20rem;
+}
+
+.mt-3 {
+    margin-top: 30rem;
+}
+
+.mt-6 {
     margin-top: 60rem;
+}
+
+.content {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.8rem;
+    color: rgb(255, 222, 173);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.title {
     text-align: center;
     font-size: 3.5em;
     font-weight: bold;
@@ -33,8 +56,31 @@ body::-webkit-scrollbar-thumb {
     transition: color 500ms;
 }
 
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table th, .table td {
+    padding: 8px;
+    text-align: left;
+}
+
+.table-bordered th, .table-bordered td {
+    border: none;
+}
+
+.table-bordered {
+    border: 3px dashed rgb(255, 222, 173);
+}
+
 @media screen and (max-width: 600px) {
     .title {
         font-size: 1.5em;
+    }
+
+    .content {
+        font-size: 1rem;
+        text-align: justify-all;
     }
 }
