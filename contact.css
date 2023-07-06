@@ -1,0 +1,37 @@
+.contact-section {
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-list li {
+    margin: 0 10px;
+}
+
+.contact-list li a {
+    text-decoration: none;
+    color: #ffdea8;
+    transition: color 0.3s;
+    font-size: 30px;
+}
+
+.contact-list li a i {
+    margin-right: 5px;
+}
+
+.contact-list li a:hover {
+    color: #ff0000;
+    transition: color 500ms ease-in-out;
+}
