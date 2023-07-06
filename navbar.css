@@ -45,6 +45,5 @@
 @media (max-width: 455px) {
     .navbar .visitor-counter {
         display: none;
-        position: absolute;
     }
 }
