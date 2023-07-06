@@ -25,3 +25,10 @@
     filter: grayscale(0%);
     transition: all 500ms;
 }
+
+@media screen and (max-width: 600px) {
+    .gallery {
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+}
