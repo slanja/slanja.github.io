@@ -46,4 +46,12 @@
     .navbar .visitor-counter {
         display: none;
     }
+
+    .navbar {
+        justify-content: flex-start;
+    }
+
+    .navbar li:last-child {
+        margin-left: auto;
+    }
 }
