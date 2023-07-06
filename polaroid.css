@@ -25,7 +25,7 @@
 
 
 .caption {
-  font-family: 'Poor Story';
+  font-family: 'Poor Story', cursive;
   font-size: 24px;
   font-weight: bold;
   margin-top: 8px;
@@ -46,5 +46,6 @@
     font-size: 16px;
     margin-top: 6px;
     margin-bottom: 10px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
   }
 }
