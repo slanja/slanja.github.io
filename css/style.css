@@ -36,9 +36,15 @@ body::-webkit-scrollbar-thumb {
     margin-top: 60rem;
 }
 
-.content {
+.ml-5 {
     margin-left: 5%;
+}
+
+.mr-5 {
     margin-right: 5%;
+}
+
+.content {
     font-size: 1.8rem;
     color: rgb(255, 222, 173);
     font-family: 'Roboto Mono', monospace;
@@ -72,6 +78,22 @@ body::-webkit-scrollbar-thumb {
 
 .table-bordered {
     border: 3px dashed rgb(255, 222, 173);
+}
+
+.en {
+    display: none;
+}
+
+#switch {
+    margin-left: 1%;
+    top: 0;
+    position: fixed;
+    z-index: 999;
+}
+
+#switch:hover {
+    color: #ff0000;
+    transition: color 500ms ease-in-out;
 }
 
 @media screen and (max-width: 600px) {
