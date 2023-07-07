@@ -91,6 +91,7 @@ body::-webkit-scrollbar-thumb {
     top: 0;
     position: fixed;
     z-index: 999;
+    cursor: pointer;
 }
 
 #switch:hover {
