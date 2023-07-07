@@ -19,6 +19,7 @@
     object-position: center;
     filter: grayscale(100%);
     transition: all 1000ms;
+    cursor: pointer;
 }
 
 .image:hover {
