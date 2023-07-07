@@ -6,11 +6,12 @@
     <meta name="google-site-verification" content="MsiY-u5uh6w34M2YIimLkWn9PnE0WOuTv3KkWxBTioE"/>
 
     <meta name="description" content="Focení portrétů, akcí a domácích mazlíčků, tvorba webových stránek pro mobily, tablety i počítače, moderní design.">
-    <meta name="keywords" content="photography, programming, bootstrap, webiste, focení, fotografofání, Znojmo, focení znojmo, fotografování znojmo, znojmo focení, znojmo fotky, znojmo fotograf, znojmo portréty, znojmo focení zvířat, Znojmo photography, Znojmo photos, Znojmo images, Znojmo district photographer, Znojmo website development, web development in Znojmo, Znojmo web design, Znojmo programming, coding in Znojmo, programming services Znojmo, Znojmo Bootstrap websites, responsive web design Znojmo, Znojmo web templates, Znojmo district attractions, explore Znojmo region, historical sites in Znojmo district, photography, photos, images, camera, photographer, website development, web development, web design, coding, programming, programming, coding, software development, computer science, algorithms, Bootstrap, responsive design, front-end development, CSS framework, web templates, Znojmo district, Znojmo region, Znojmo attractions, historical sites, cultural heritage, ZDEsy, Pohoda">
+    <meta name="keywords" content="photography, programming, bootstrap, webiste, focení, fotografofání, Znojmo, focení znojmo, fotografování znojmo, znojmo focení, znojmo fotky, znojmo fotograf, znojmo portréty, znojmo focení zvířat, Znojmo photography, Znojmo photos, Znojmo images, Znojmo district photographer, Znojmo website development, web development in Znojmo, Znojmo web design, Znojmo programming, coding in Znojmo, programming services Znojmo, Znojmo Bootstrap websites, responsive web design Znojmo, Znojmo web templates, Znojmo district attractions, explore Znojmo region, historical sites in Znojmo district, photography, photos, images, camera, photographer, website development, web development, web design, coding, programming, programming, coding, software development, computer science, algorithms, Bootstrap, responsive design, front-end development, CSS framework, web templates, Znojmo district, Znojmo region, Znojmo attractions, historical sites, cultural heritage, ZDEsy, Pohoda, děti">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
     <meta name="author" content="Jan Slaný">
+    <meta name="theme-color" content="#ff0000">
 
     <title>Jan Slaný - focení, tvorba webových stránek, programování</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -22,6 +23,11 @@
 </head>
 <body>
     <span id="home"></span>
+
+    <!--LANGUAGE SWITCH-->
+    <a id="switch" class="content en" onclick="toggleLink()">CZ</a>
+    <a id="switch" class="content cz" onclick="toggleLink()">EN</a>
+
     <!--NAVBAR-->
     <nav class="navbar">
         <ul class="flex flex-wrap items-center justify-between">
@@ -29,7 +35,8 @@
             <li><a href="#gallery"><i class="fas fa-image"></i></a></li>
             <li><a href="#post"><i class="fas fa-envelope"></i></a></li>
             <li>
-                <p class="visitor-counter ml-auto">Visited: <span class="website-counter">1</span></p>
+                <p class="visitor-counter ml-auto en">Visited: <span class="website-counter">1</span></p>
+                <p class="visitor-counter ml-auto cz">Navštíveno: <span class="website-counter">1</span></p>
             </li>
         </ul>
     </nav>
@@ -43,41 +50,51 @@
     <br><br>
 
     <!--MAIN CONTENT-->
-    <h2 class="title text-changing mt-6">Service</h2>
-    <p class="content text-changing">
+    <h2 class="title text-changing mt-6 en">Service</h2>
+    <p class="content ml-5 mr-5 text-changing en">
         Hi, I'm Honza I'm a programmer, photographer and many more. If you are interested in any of my services feel free to contact me. My main work is photography, below on the page you can see some of my photos and also the price list if you are interested. Price can also be agreed.
+    </p>
+
+    <h2 class="title text-changing mt-6 cz">Služby</h2>
+    <p class="content ml-5 mr-5 text-changing cz">
+        Zdravím, já jsem Honza jsem programátor, fotograf a mnoho dalších. Pokud máte zájem o některou z mých služeb, neváhejte mě kontaktovat. Mojí hlavní prací je fotografování, níže na stránce si můžete prohlédnout některé mé fotografie a také ceník, pokud máte zájem. Na ceně se lze také dohodnout.
     </p>
 
     <br><br>
 
     <div class="container mx-auto p-6">
-    <div class="overflow-x-auto">
-      <table class="table table-bordered w-full">
-        <tbody>
-          <tr>
-            <td class="py-2 px-4 content text-changing">Portrait Photography</td>
-            <td class="py-2 px-4 content text-changing">130CZK</td>
-          </tr>
-          <tr>
-            <td class="py-2 px-4 content text-changing">Pet Photography</td>
-            <td class="py-2 px-4 content text-changing">100CZK</td>
-          </tr>
-          <tr>
-            <td class="py-2 px-4 content text-changing">Event Photography</td>
-            <td class="py-2 px-4 content text-changing">220CZK</td>
-          </tr>
-          <tr>
-            <td class="py-2 px-4 content text-changing">Bootstrap website</td>
-            <td class="py-2 px-4 content text-changing">300CZK</td>
-          </tr>
-        </tbody>
-      </table>
+        <div class="overflow-x-auto">
+            <table class="table table-bordered w-full">
+                <tbody>
+                    <tr>
+                        <td class="py-2 px-4 content text-changing en">Portrait Photography</td>
+                        <td class="py-2 px-4 content text-changing cz">Focení Portrétů</td>
+                        <td class="py-2 px-4 content text-changing">130CZK</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 content text-changing en">Pet Photography</td>
+                        <td class="py-2 px-4 content text-changing cz">Focení Domácích Mazlíčků</td>
+                        <td class="py-2 px-4 content text-changing">100CZK</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 content text-changing en">Event Photography</td>
+                        <td class="py-2 px-4 content text-changing cz">Focení Akcí</td>
+                        <td class="py-2 px-4 content text-changing">220CZK</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 content text-changing en">Bootstrap Website</td>
+                        <td class="py-2 px-4 content text-changing cz">Bootstrap Webová Stránka</td>
+                        <td class="py-2 px-4 content text-changing">300CZK</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-  </div>
 
 
     <!--GALLERY-->
-    <h2 class="title text-changing mt-3" id="gallery">Gallery</h2>
+    <h2 class="title text-changing mt-3 en" id="gallery">Gallery</h2>
+    <h2 class="title text-changing mt-3 cz" id="gallery">Galerie</h2>
     <div class="gallery">
 
         <img class="image" src="https://images.pexels.com/photos/16576485/pexels-photo-16576485/free-photo-of-priroda-kvetiny-zahrada-pes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
@@ -130,6 +147,25 @@
         </ul>
     </section>
 
+
+    <script>
+        function toggleLink() {
+            var link = document.getElementById("switch");
+            var enElements = document.getElementsByClassName("en");
+            var czElements = document.getElementsByClassName("cz");
+          
+            for (var i = 0; i < enElements.length; i++) {
+                if (enElements[i].style.display === "none") {
+                    enElements[i].style.display = "block";
+                    czElements[i].style.display = "none";
+                } else {
+                    enElements[i].style.display = "none";
+                    czElements[i].style.display = "block";
+                }
+            }
+        }
+    </script>
+
     <script>
         class WebsiteCounter {
             constructor() {
@@ -161,7 +197,6 @@
         // Create an instance of the WebsiteCounter class
         const counter = new WebsiteCounter();
     </script>
-
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
