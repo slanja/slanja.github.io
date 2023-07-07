@@ -42,9 +42,11 @@
 }
 
 /* Media query */
-@media (max-width: 455px) {
+@media (max-width: 535px) {
     .navbar .visitor-counter {
         display: none;
+        opacity: 0%;
+        position: absolute;
     }
 
     .navbar {
