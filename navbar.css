@@ -44,7 +44,7 @@
 /* Media query */
 @media (max-width: 455px) {
     .navbar .visitor-counter {
-        display: none;
+        /*display: none;*/
     }
 
     .navbar {
