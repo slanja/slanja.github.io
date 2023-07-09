@@ -45,6 +45,10 @@ body::-webkit-scrollbar-thumb {
     margin-right: 5%;
 }
 
+.hidden {
+    display: none;
+}
+
 .content {
     font-size: 1.8rem;
     color: rgb(255, 222, 173);
