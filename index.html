@@ -29,7 +29,7 @@
     <a id="switch" class="content cz" onclick="switchLang()">en</a>
 
     <!--NAVBAR-->
-    <nav class="navbar">
+    <nav class="navbar mobile-hidden">
         <ul class="flex flex-wrap items-center justify-between">
             <li><a href="#home"><i class="fas fa-home"></i></a></li>
             <li><a href="#gallery"><i class="fas fa-image"></i></a></li>
@@ -38,6 +38,15 @@
                 <p class="visitor-counter ml-auto en">Visited: <span class="website-counter">1</span></p>
                 <p class="visitor-counter ml-auto cz">Navštíveno: <span class="website-counter">1</span></p>
             </li>
+        </ul>
+    </nav>
+
+    <!--NAVBAR MOBILE-->
+    <nav class="navbar pc-hidden">
+        <ul class="flex flex-wrap items-center justify-between">
+            <li><a href="#home"><i class="fas fa-home"></i></a></li>
+            <li><a href="#gallery"><i class="fas fa-image"></i></a></li>
+            <li><a href="#post"><i class="fas fa-envelope"></i></a></li>
         </ul>
     </nav>
 
