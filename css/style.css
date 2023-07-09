@@ -2,6 +2,7 @@
 @import "polaroid.css";
 @import "gallery.css";
 @import "contact.css";
+@import "lightbox.css";
 
 html {
     background-color: #1a1a1a;
