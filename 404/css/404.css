@@ -1,8 +1,11 @@
+html, body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 html {
     background-color: #1a1a1a;
     scroll-behavior: smooth;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 .content {
@@ -35,18 +38,23 @@ html {
 .image {
     position: relative;
     animation: image 8s infinite linear;
+    transition: all 500ms;
+    filter: grayscale(100%);
+}
+
+.image:hover {
+    transition: all 500ms;
+    filter: grayscale(0%);
 }
 
 @keyframes image {
     from {
         transform: rotate(0deg);
         margin-left: -20vw;
-        filter: grayscale(100%);
     }
     to {
         transform: rotate(359deg);
         margin-left: 100vw;
-        filter: grayscale(0%);
     }
 }
 
