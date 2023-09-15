@@ -203,38 +203,6 @@
             <li><a href="https://instagram.com/slany3.jan" target="_blank"><i class="fab fa-instagram"></i></a></li>
         </ul>
     </section>
-
-    <script>
-        class WebsiteCounter {
-            constructor() {
-                this.counterElement = document.querySelector('.website-counter');
-                this.initializeCounter();
-            }
-
-            initializeCounter() {
-                // Check if the counter is already stored in local storage
-                if (localStorage.getItem('counter')) {
-                    // Retrieve the counter value from local storage
-                    const count = parseInt(localStorage.getItem('counter'));
-                    // Display the counter value
-                    this.counterElement.textContent = count;
-                }
-            
-                // Increment the counter and update the display
-                this.incrementCounter();
-            }
-
-            incrementCounter() {
-                let count = parseInt(localStorage.getItem('counter')) || 0;
-                count++;
-                localStorage.setItem('counter', count);
-                this.counterElement.textContent = count;
-            }
-        }
-
-        // Create an instance of the WebsiteCounter class
-        const counter = new WebsiteCounter();
-    </script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
