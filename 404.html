@@ -1,24 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="404/404.ico">
-    <title>404 - slanja.github.io</title>
-    <link rel="stylesheet" type="text/css" href="404/css/404.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
-    <meta http-equiv="refresh" content="21;url=https://slanja.github.io">>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="20;url=https://slanja.github.io">
+    <title>Page Not Found | Jan Slaný</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        base: '#F9F9F7',
+                        header: '#EDF0E9',
+                        dark: '#2C3329',
+                        muted: '#646E5E',
+                        accent: '#5F7A61',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Lora', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <h2 class="title text-changing">404</h2>
-    <p class="text text-changing">File not found</p>
+<body class="bg-base text-dark font-sans antialiased min-h-screen flex flex-col justify-center items-center selection:bg-accent selection:text-white px-6">
 
-    <div class="content">
-        <img class="image" src="404/404.png">
-    </div>
+    <main class="text-center max-w-lg mx-auto">
+        <div class="text-8xl mb-6 hover:animate-bounce cursor-default select-none" title="Squeak!">🦦</div>
+        
+        <h1 class="text-6xl font-serif font-bold text-dark mb-4 tracking-tight">404</h1>
+        <h2 class="text-2xl font-medium text-accent mb-4">Oh no, you're <i>otterly</i> lost!</h2>
+        
+        <p class="text-muted mb-10 leading-relaxed text-[1.05rem]">
+            The page you are looking for has floated away down the river. Let's get you back to familiar waters.
+        </p>
+        
+        <a href="/" class="inline-flex items-center gap-2 bg-accent text-white px-7 py-3.5 rounded-xl font-medium hover:bg-dark transition-colors shadow-sm hover:shadow-md">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+            Swim back Home
+        </a>
+    </main>
 
-    <script defer src="js/letterhover.js"></script>
 </body>
 </html>
