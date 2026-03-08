@@ -1,234 +1,124 @@
 <!DOCTYPE html>
-<html lang="cs, en">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="MsiY-u5uh6w34M2YIimLkWn9PnE0WOuTv3KkWxBTioE"/>
-
-    <meta name="description" content="Focení portrétů, akcí a domácích mazlíčků, web scraping, tvorba webových stránek pro mobily, tablety i počítače, moderní design.">
-    <meta name="keywords" content="Tvorba webových stránek, Bootstrap, Web scraping, Photography, Programming, Focení, Programování, Znojmo">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="en, cs">
-    <meta name="author" content="Jan Slaný">
-    <meta name="theme-color" content="#ff0000">
-
-    <title>Jan Slaný - focení, tvorba webových stránek, programování</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan Slaný | Developer & Photographer</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        base: '#F9F9F7',
+                        header: '#EDF0E9',
+                        dark: '#2C3329',
+                        muted: '#646E5E',
+                        accent: '#5F7A61',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Lora', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <h1 class="hidden">Jan Slaný - focení, tvorba webových stránek, programování</h1>
-    <p class="hidden">tvorba, webových, stránek, tvorba www, Tvorba webových stránek Znojmo, Bootstrap Znojmo, Web scraping Znojmo, Focení webových stránek Znojmo, Programování webových stránek Znojmo, Tvorba webových stránek v okolí Znojma, Bootstrap v okolí Znojma, Web scraping v okolí Znojma, Focení webových stránek v okolí Znojma, Programování webových stránek v okolí Znojma, Tvorba webových stránek, Bootstrap, Web scraping, Focení webových stránek, Programování webových stránek, photography, programming, bootstrap, webiste, focení, fotografofání, Znojmo, focení znojmo, fotografování znojmo, znojmo focení, znojmo fotky, znojmo fotograf, znojmo portréty, znojmo focení zvířat, Znojmo photography, Znojmo photos, Znojmo images, Znojmo district photographer, Znojmo website development, web development in Znojmo, Znojmo web design, Znojmo programming, coding in Znojmo, programming services Znojmo, Znojmo Bootstrap websites, responsive web design Znojmo, Znojmo web templates, Znojmo district attractions, explore Znojmo region, historical sites in Znojmo district, photography, photos, images, camera, photographer, website development, web development, web design, coding, programming, programming, coding, software development, computer science, algorithms, Bootstrap, responsive design, front-end development, CSS framework, web templates, Znojmo district, Znojmo region, Znojmo attractions, historical sites, cultural heritage, ZDEsy, Pohoda, děti, Znojmo, Jan Slaný, Slany, Gpoa. Web, Jihomoravský kraj, CZ, Jan, foto, python, java, javascript, html, css, website, gaming, slanja, Focení portrétů, akcí a domácích mazlíčků, web scraping, tvorba webových stránek pro mobily, tablety i počítače, moderní design. Jan Slaný - focení, tvorba webových stránek, programování</p>
+<body class="bg-base text-dark font-sans antialiased min-h-screen flex flex-col selection:bg-accent selection:text-white">
 
-
-    <!--LANGUAGE SWITCH-->
-    <a id="switch" class="content en" onclick="switchLang()">cz</a>
-    <a id="switch" class="content cz" onclick="switchLang()">en</a>
-
-    <!--NAVBAR-->
-    <nav class="navbar mobile-hidden">
-        <ul class="flex flex-wrap items-center justify-between">
-            <li><a href="#home"><i class="fas fa-home"></i></a></li>
-            <li><a href="#gallery"><i class="fas fa-image"></i></a></li>
-            <li><a href="#post"><i class="fas fa-envelope"></i></a></li>
-            <!--
-            <li>
-                <p class="visitor-counter ml-auto en">Visited: <span class="website-counter">1</span></p>
-                <p class="visitor-counter ml-auto cz">Navštíveno: <span class="website-counter">1</span></p>
-            </li>
-            -->
-        </ul>
-    </nav>
-
-    <!--NAVBAR MOBILE-->
-    <nav class="navbar pc-hidden">
-        <ul class="flex flex-wrap items-center justify-between">
-            <li><a href="#home"><i class="fas fa-home"></i></a></li>
-            <li><a href="#gallery"><i class="fas fa-image"></i></a></li>
-            <li><a href="#post"><i class="fas fa-envelope"></i></a></li>
-        </ul>
-    </nav>
-
-    <!--POLAROID IMAGE-->
-    <div class="polaroid">
-        <img src="polaroid.jpg" alt="a man wearing a flower crown">
-        <p class="caption">Jan Slaný</p>
-    </div>
-
-    <br><br>
-
-    <div class="mt-6" id="home"></div>
-    
-    <!--MAIN CONTENT-->
-    <!--
-    <h2 class="title text-changing mt-6 en">Service</h2>
-    <p class="content ml-5 mr-5 text-changing en">
-        Hi, I'm Honza, I'm a programmer and photographer. If you are interested in a photo shoot or want to program something or find out any information about a place, person or event, feel free to contact me. My main work is photography, below on the page you can see some of my photos. The price can also be agreed upon depending on the situation and the requirement, the table below is a guide price.
-    </p>
-
-    <h2 class="title text-changing mt-6 cz">Služby</h2>
-    <p class="content ml-5 mr-5 text-changing cz">
-        Zdravím, já jsem Honza jsem programátor a fotograf. Pokud máte zájem o focení nebo chcete něco naprogramovat, případně zjistit libovolné informace o místě, osobě nebo akci, neváhejte mě kontaktovat. Mojí hlavní prací je fotografování, níže na stránce si můžete prohlédnout některé mé fotografie. Na ceně se lze také dohodnout dle situace a náročnosti, níže v tabulce je orientační cena.
-    </p>
-
-    <br><br>
-
-    <div class="container mx-auto p-6">
-        <div class="overflow-x-auto">
-            <table class="table table-bordered w-full">
-                <tbody>
-                    <tr>
-                        <td class="py-2 px-4 content text-changing en">Portrait Photography</td>
-                        <td class="py-2 px-4 content text-changing cz">Focení Portrétů</td>
-                        <td class="py-2 px-4 content text-changing">130CZK</td>
-                    </tr>
-                    <tr>
-                        <td class="py-2 px-4 content text-changing en">Pet Photography</td>
-                        <td class="py-2 px-4 content text-changing cz">Focení Domácích Mazlíčků</td>
-                        <td class="py-2 px-4 content text-changing">100CZK</td>
-                    </tr>
-                    <tr>
-                        <td class="py-2 px-4 content text-changing en">Event Photography</td>
-                        <td class="py-2 px-4 content text-changing cz">Focení Akcí</td>
-                        <td class="py-2 px-4 content text-changing">220CZK</td>
-                    </tr>
-                    <tr>
-                        <td class="py-2 px-4 content text-changing en">Bootstrap Website</td>
-                        <td class="py-2 px-4 content text-changing cz">Bootstrap Webová Stránka</td>
-                        <td class="py-2 px-4 content text-changing">300CZK</td>
-                    </tr>
-                    <tr>
-                        <td class="py-2 px-4 content text-changing">Web Scraping</td>
-                        <td class="py-2 px-4 content text-changing">530CZK</td>
-                    </tr>
-                </tbody>
-            </table>
+    <header class="bg-header border-b border-accent/10 py-16 mb-16">
+        <div class="max-w-3xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center md:items-start justify-between gap-10">
+            
+            <div class="text-center md:text-left flex-1">
+                <h1 class="text-4xl md:text-5xl font-serif font-semibold text-dark mb-3 tracking-tight">
+                    Hi, I'm Honza 👋
+                </h1>
+                <p class="text-lg md:text-xl text-accent font-medium mb-6">
+                    Software Developer & Nature Enthusiast
+                </p>
+                <p class="text-[1.05rem] text-muted font-light leading-relaxed mb-8">
+                    I’m a developer who lives by the 'learn-by-building' philosophy. I enjoy exploring new ideas and turning them into reality through constant experimentation and iterative improvement. Every project is an opportunity for me to learn something new and push my skills further.
+                </p>
+                
+                <div class="flex justify-center md:justify-start gap-6">
+                    <a href="https://github.com/slanja" target="_blank" class="group flex items-center gap-2 text-dark font-medium hover:text-accent transition-colors border-b border-transparent hover:border-accent pb-1">
+                        <svg class="w-5 h-5 fill-current group-hover:fill-accent transition-colors" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/slany3jan/" target="_blank" class="group flex items-center gap-2 text-dark font-medium hover:text-accent transition-colors border-b border-transparent hover:border-accent pb-1">
+                        <svg class="w-5 h-5 fill-current group-hover:fill-accent transition-colors" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+            
+            <div class="relative shrink-0">
+                <div class="absolute inset-0 bg-accent rounded-full blur-2xl opacity-20 animate-pulse"></div>
+                <img 
+                    src="https://avatars.githubusercontent.com/u/97552526?v=4" 
+                    alt="Jan Slaný" 
+                    class="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-[5px] border-white shadow-xl z-10" 
+                />
+            </div>
         </div>
-    </div>
-    -->
+    </header>
 
-    <!--GALLERY-->
-    <div class="mt-3"></div>
-
-    <span id="gallery"></span>
-    <h2 class="title text-changing en">Gallery</h2>
-    <h2 class="title text-changing cz">Galerie</h2>
-    <div class="gallery">
-        <!-- <img class="image" src="" alt=""> -->
-
-        <img class="image" src="https://images.pexels.com/photos/18555274/pexels-photo-18555274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
-
-        <img class="image" src="https://images.pexels.com/photos/18385493/pexels-photo-18385493.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-
-        <img class="image" src="https://images.pexels.com/photos/18385490/pexels-photo-18385490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-
-        <img class="image" src="https://images.pexels.com/photos/18385488/pexels-photo-18385488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-
-        <img class="image" src="https://images.pexels.com/photos/18385485/pexels-photo-18385485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-
-        <img class="image" src="https://images.pexels.com/photos/18385484/pexels-photo-18385484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-
-        <img class="image" src="https://images.pexels.com/photos/18385476/pexels-photo-18385476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    <main class="max-w-3xl mx-auto px-6 w-full flex-grow">
         
-        <img class="image" src="https://images.pexels.com/photos/18385469/pexels-photo-18385469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <section class="mb-16">
+            <h2 class="text-2xl font-serif font-semibold text-dark mb-6 text-center md:text-left">
+                💻 My Projects
+            </h2>
+            
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-black/5 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-baseline mb-4 gap-2">
+                    <h3 class="text-xl text-dark font-bold">PhotoSort</h3>
+                    <a href="https://github.com/slanja/photosort" target="_blank" class="text-sm text-accent font-medium hover:underline">
+                        View Code on GitHub →
+                    </a>
+                </div>
+                <p class="text-[0.95rem] text-muted mb-3 leading-relaxed">
+                    <strong class="text-dark">The Problem:</strong> As an enthusiastic photographer, my hard drive was a chaotic mess of thousands of photos, and I hated spending hours moving them manually.
+                </p>
+                <p class="text-[0.95rem] text-muted mb-6 leading-relaxed">
+                    <strong class="text-dark">The Solution:</strong> I wrote a script that takes a folder of photos, reads their hidden metadata (EXIF data on when they were taken), and automatically organizes them into a neat folder structure by Year and Month.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-[#F0F2ED] text-accent px-3 py-1.5 rounded-md text-[0.7rem] font-mono font-bold tracking-widest uppercase">Python</span>
+                    <span class="bg-[#F0F2ED] text-accent px-3 py-1.5 rounded-md text-[0.7rem] font-mono font-bold tracking-widest uppercase">Automation</span>
+                    <span class="bg-[#F0F2ED] text-accent px-3 py-1.5 rounded-md text-[0.7rem] font-mono font-bold tracking-widest uppercase">Productivity Tools</span>
+                </div>
+            </div>
+        </section>
 
-        <img class="image" src="https://images.pexels.com/photos/18385465/pexels-photo-18385465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <div class="w-16 h-px bg-[#D1D5CB] mx-auto my-16"></div>
 
-        <img class="image" src="https://images.pexels.com/photos/18385463/pexels-photo-18385463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <section class="mb-20">
+            <h2 class="text-2xl font-serif font-semibold text-dark mb-3 text-center md:text-left">
+                📸 Photography
+            </h2>
+            <p class="text-muted text-center md:text-left mb-8">
+                A few of my favorite captures.
+            </p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <img src="https://images.pexels.com/photos/13285565/pexels-photo-13285565.jpeg" alt="bunch of yellow flowers" class="w-full h-56 object-cover rounded-xl border-2 border-white shadow-sm hover:scale-[1.02] transition-transform duration-300" />
+                <img src="https://images.pexels.com/photos/13285564/pexels-photo-13285564.jpeg" alt="puprle flower" class="w-full h-56 object-cover rounded-xl border-2 border-white shadow-sm hover:scale-[1.02] transition-transform duration-300" />
+                <img src="https://images.pexels.com/photos/12373643/pexels-photo-12373643.jpeg" alt="leaf on the forest ground" class="w-full h-56 object-cover rounded-xl border-2 border-white shadow-sm hover:scale-[1.02] transition-transform duration-300" />
+                <img src="https://images.pexels.com/photos/16576485/pexels-photo-16576485.jpeg" alt="border collie with tulips" class="w-full h-56 object-cover rounded-xl border-2 border-white shadow-sm hover:scale-[1.02] transition-transform duration-300" />
+            </div>
+        </section>
 
-        <img class="image" src="https://images.pexels.com/photos/18385461/pexels-photo-18385461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    </main>
 
-        <img class="image" src="https://images.pexels.com/photos/18385458/pexels-photo-18385458.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    <footer class="py-10 text-center text-sm text-[#A0AAB2] bg-black/[0.02] border-t border-black/[0.03] mt-auto">
+        <p>© 2026 Jan Slaný. Coded with love ❤️</p>
+    </footer>
 
-        <img class="image" src="https://images.pexels.com/photos/18186405/pexels-photo-18186405/free-photo-of-liska-obecna-vysoke-tatry.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a fox laying on top of a forest floor">
-
-        <img class="image" src="https://images.pexels.com/photos/17537802/pexels-photo-17537802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a black and white dog laying on top of a forest floor">
-
-        <img class="image" src="https://images.pexels.com/photos/17537796/pexels-photo-17537796.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a black and white puppy sleeping on a person's lap">
-
-        <img class="image" src="https://images.pexels.com/photos/17537711/pexels-photo-17537711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a black and white dog laying on top of a dirt road">
-
-        <img class="image" src="https://images.pexels.com/photos/17537646/pexels-photo-17537646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a white plate topped with nachos and salsa">
-
-        <img class="image" src="https://images.pexels.com/photos/17537643/pexels-photo-17537643.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a close up of fern leaves in the dark">
-
-        <img class="image" src="https://images.pexels.com/photos/17537642/pexels-photo-17537642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a close up of a white flower in the dark">
-
-        <img class="image" src="https://images.pexels.com/photos/17537615/pexels-photo-17537615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="two sparklers in a circle with a black background">
-
-        <img class="image" src="https://images.pexels.com/photos/16576485/pexels-photo-16576485/free-photo-of-priroda-kvetiny-zahrada-pes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a black and white puppy in a field of tulips">
-
-        <img class="image" src="https://images.pexels.com/photos/13285565/pexels-photo-13285565.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="black eyed susan hd wallpaper">
-
-        <img class="image" src="https://images.pexels.com/photos/13285564/pexels-photo-13285564.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a purple flower with a yellow center in front of rocks">
-
-        <img class="image" src="https://images.pexels.com/photos/12429590/pexels-photo-12429590.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a stone bridge over a stream in the woods">
-
-        <img class="image" src="https://images.pexels.com/photos/12373643/pexels-photo-12373643.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a leaf laying on the ground in the dark">
-
-        <img class="image" src="https://images.pexels.com/photos/12373600/pexels-photo-12373600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a purple flower in the middle of a dark forest">
-
-        <img class="image" src="https://images.pexels.com/photos/12373599/pexels-photo-12373599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a close up of leaves on a tree">
-
-        <img class="image" src="https://images.pexels.com/photos/12373613/pexels-photo-12373613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="an orange rose growing out of a chain link fence">
-
-        <img class="image" src="https://images.pexels.com/photos/12373614/pexels-photo-12373614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a white flower with a yellow center on a green background">
-
-        <img class="image" src="https://images.pexels.com/photos/12373607/pexels-photo-12373607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="yellow lilies blooming in front of a fence">
-
-        <img class="image" src="https://images.pexels.com/photos/11916381/pexels-photo-11916381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a wooden sign with the number 11 on it on a brick wall">
-
-        <img class="image" src="https://images.pexels.com/photos/11775909/pexels-photo-11775909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a house on top of a hill">
-
-        <img class="image" src="https://images.pexels.com/photos/11775901/pexels-photo-11775901.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="two flags flying over a stone wall">
-
-        <img class="image" src="https://images.pexels.com/photos/11775900/pexels-photo-11775900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="cars parked on a street in front of a building">
-
-        <img class="image" src="https://images.pexels.com/photos/11775896/pexels-photo-11775896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a field of wheat with a church in the background">
-
-        <img class="image" src="https://images.pexels.com/photos/11775895/pexels-photo-11775895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a large dam with a building in front of it">
-
-        <img class="image" src="https://images.pexels.com/photos/11775881/pexels-photo-11775881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a coffee cup sitting on a wooden table">
-
-        <img class="image" src="https://images.pexels.com/photos/11775879/pexels-photo-11775879.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a stone castle sits on top of a hill">
-
-        <img class="image" src="https://images.pexels.com/photos/11775848/pexels-photo-11775848.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="an aerial view of a white suv driving through a forest">
-
-        <img class="image" src="https://images.pexels.com/photos/11775840/pexels-photo-11775840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a purple flower is growing in the grass near a house">
-    </div>
-
-    <!--Lightbox-->
-    <div class="lightbox">
-        <img src="#">
-        <div id="prevBtn">
-            <i class="fa-solid fa-angle-left"></i>
-        </div>
-        <div id="nextBtn">
-            <i class="fa-solid fa-angle-right"></i>
-        </div>
-    </div>
-
-
-    <!--CONTACT-->
-    <section class="contact-section" id="post">
-        <h2 class="content text-changing">by Jan Slaný</h2>
-        <ul class="contact-list">
-            <li><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=slany3.jan@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
-            <li><a href="https://github.com/slanja" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://instagram.com/slany3.jan" target="_blank"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-    </section>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script defer src="js/letterhover.js"></script>
-    <script defer src="js/langswitch.js"></script>
-    <script defer src="js/lightbox.js"></script>
 </body>
 </html>
